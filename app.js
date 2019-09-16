@@ -37,7 +37,7 @@ function dates(selectedDay) {
   if(currentDay < selectedDay) {
    displayDate = new Date().getDate() + (selectedDay - currentDay);
   } else {
-   displayDate = new Date().getDate() + (currentDay - selectedDay);
+   displayDate = new Date().getDate() - (currentDay - selectedDay);
   }
   let currentMonth = new Date().getMonth() + 1;
   let currentYear = new Date().getFullYear();
